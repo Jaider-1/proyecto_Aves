@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Europa">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aves de Europa"
+        android:textColor="#A35D75"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8E6BCC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="198dp"
+                    android:layout_height="148dp"
+                    android:contentDescription="@string/pajaros"
+                    android:onClick="playAudio1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pitoreal"
+                    android:tooltipText="America"
+                    tools:src="@drawable/pitoreal" />
+
+                <LinearLayout
+                    android:layout_width="183dp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Título -->
+                    <TextView
+                        android:id="@+id/titleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pito Real"
+                        android:textColor="#030610"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <!-- Párrafo -->
+                    <TextView
+                        android:id="@+id/paragraphTextView"
+                        android:layout_width="182dp"
+                        android:layout_height="106dp"
+                        android:text="Ave carpintera, plumaje negro y blanco en macho."
+                        android:textColor="#060917"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="531dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="183dp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Título -->
+                    <TextView
+                        android:id="@+id/titleTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alcaudón Real"
+                        android:textColor="#030612"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <!-- Párrafo -->
+                    <TextView
+                        android:id="@+id/paragraphTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Depredador con máscara facial negra, empala presas."
+                        android:textColor="#010512"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="150dp"
+                    android:layout_height="227dp"
+                    android:contentDescription="@string/pajaros"
+                    android:onClick="playAudio2"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/alcaudonreal"
+                    android:tooltipText="Europa"
+                    tools:src="@drawable/alcaudonreal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="188dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/pajaros"
+                    android:onClick="playAudio3"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/aguilaimperial"
+                    android:tooltipText="Africa"
+                    tools:src="@drawable/aguilaimperial" />
+
+                <LinearLayout
+                    android:layout_width="226dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Título -->
+                    <TextView
+                        android:id="@+id/titleTextView3"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:text="Águila Ibérica Imperial"
+                        android:textColor="#010512"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <!-- Párrafo -->
+                    <TextView
+                        android:id="@+id/paragraphTextView3"
+                        android:layout_width="188dp"
+                        android:layout_height="110dp"
+                        android:text="Rapaz majestuosa, símbolo de conservación."
+                        android:textColor="#010512"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/pajaros"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/menu1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

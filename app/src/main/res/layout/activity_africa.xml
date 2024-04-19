@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Africa">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="36dp"
+        android:text="Aves de Africa"
+        android:textColor="#009688"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9F6E6B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="135dp"
+                    android:layout_height="166dp"
+                    android:contentDescription="@string/pajaros"
+                    android:onClick="playAudio1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/paraisowilson"
+                    android:tooltipText="America"
+                    tools:src="@drawable/paraisowilson" />
+
+                <LinearLayout
+                    android:layout_width="253dp"
+                    android:layout_height="216dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Título -->
+
+                    <!-- Párrafo -->
+                    <TextView
+                        android:id="@+id/titleTextView"
+                        android:layout_width="214dp"
+                        android:layout_height="88dp"
+                        android:text="Ave del Paraíso de Wilson"
+                        android:textColor="#030610"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/paragraphTextView"
+                        android:layout_width="198dp"
+                        android:layout_height="94dp"
+                        android:text="Posee un plumaje vibrante y un elaborado cortejo nupcial."
+                        android:textColor="#060917"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="531dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="183dp"
+                    android:layout_height="262dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Título -->
+                    <TextView
+                        android:id="@+id/titleTextView2"
+                        android:layout_width="170dp"
+                        android:layout_height="112dp"
+                        android:text="Ave del Paraíso Mayor"
+                        android:textColor="#030612"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <!-- Párrafo -->
+                    <TextView
+                        android:id="@+id/paragraphTextView2"
+                        android:layout_width="156dp"
+                        android:layout_height="140dp"
+                        android:text="Tiene plumas alargadas y coloridas que forman una cola extravagante "
+                        android:textColor="#010512"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/pajaros"
+                    android:onClick="playAudio2"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/paraisomayor"
+                    android:tooltipText="Europa"
+                    tools:src="@drawable/paraisomayor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="231dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="145dp"
+                    android:layout_height="226dp"
+                    android:contentDescription="@string/pajaros"
+                    android:onClick="playAudio3"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/grullacoronada"
+                    android:tooltipText="Africa"
+                    tools:src="@drawable/grullacoronada" />
+
+                <LinearLayout
+                    android:layout_width="214dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Título -->
+                    <TextView
+                        android:id="@+id/titleTextView3"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:text="Grulla Coronada"
+                        android:textColor="#010512"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <!-- Párrafo -->
+                    <TextView
+                        android:id="@+id/paragraphTextView3"
+                        android:layout_width="200dp"
+                        android:layout_height="102dp"
+                        android:text="Destaca por su corona de plumas doradas en la cabeza y su elegante danza de "
+                        android:textColor="#010512"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:contentDescription="@string/pajaros"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/menu1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
